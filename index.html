@@ -2,12 +2,15 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="HeaderVideo.js"></script>
+<script type="text/javascript" src="navigationJS.js"></script>
+
 <link href="reset.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
 <title>Page Accueil Gisèle</title>
 
 <link href="header.css" rel="stylesheet" type="text/css">
+<link href="Navigation.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -17,5 +20,22 @@
   </video>
 	<h1><img src="LOGO-Gisele.png" width="590" height="150" alt=""/> </h1>
 </header>
+	
+	
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+<span onclick="closeNav()">Close</span>
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  ...
+</div> 
 </body>
 </html>
