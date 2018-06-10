@@ -1,8 +1,15 @@
 
-.contenu {
+.contenu1 {
 	position: relative;
 	width: 1200px;
 	background-color: aqua;
+	margin: 243px auto;
+	z-index: -1;
+}
+.contenu2 {
+	position: relative;
+	width: 1200px;
+	background-color: green;
 	margin: 243px auto;
 	z-index: -1;
 }
