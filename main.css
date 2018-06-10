@@ -3,5 +3,6 @@
 	position: relative;
 	width: 1200px;
 	background-color: aqua;
-	margin: 250px auto;	
+	margin: 243px auto;
+	z-index: -1;
 }
