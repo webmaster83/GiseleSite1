@@ -1,6 +1,7 @@
 
 .contenu {
+	position: relative;
 	width: 1200px;
 	background-color: aqua;
-	margin: 70px auto;	
+	margin: 250px auto;	
 }
