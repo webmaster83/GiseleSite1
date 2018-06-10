@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+#labarnoir {
+	position: absolute;
+	margin-top: 25px;
+	background-color: black;
+	width: 100%;
+	color: white;
+	height: 40px;
+}
