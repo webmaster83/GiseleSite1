@@ -1,6 +1,6 @@
 @charset "utf-8";
 input[type=text] {
-    width: 210px;
+    width: 145px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 10px;
