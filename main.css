@@ -2,14 +2,17 @@
 .contenu1 {
 	position: relative;
 	width: 1200px;
-	background-color: aqua;
-	margin: 243px auto;
+	background-color: none;
+	margin: 90px auto;
 	z-index: -1;
 }
 .contenu2 {
 	position: relative;
 	width: 1200px;
-	background-color: green;
-	margin: 243px auto;
+	margin: 90px auto;
 	z-index: -1;
+}
+h2{
+	text-align: center;
+	font-size: 50px;
 }
