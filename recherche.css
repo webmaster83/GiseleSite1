@@ -1,0 +1,19 @@
+@charset "utf-8";
+input[type=text] {
+    width: 145px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    position: absolute;
+	left: 15%;
+	padding: 7px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 30%;
+}
