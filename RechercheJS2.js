@@ -1,4 +1,5 @@
-// JavaScript Document
+// Jquery ui pour recherche autocomplete comme le site
+// Pour filtrer
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
