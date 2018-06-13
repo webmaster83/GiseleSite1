@@ -7,13 +7,27 @@
 <meta charset="utf-8">
 <title>Page Accueil Gisèle</title>
 
+<link href="header.css" rel="stylesheet" type="text/css">
+<link href="Navigation.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="video.css" rel="stylesheet" type="text/css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<header id="entete">
+  <video id="myVideo" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="gisele_video.mp4" type="video/mp4">
+  </video>
+  <h1><img class="responsive" src="LOGO-Gisele.png" alt="GTWCommunications"/></h1>
+</header>
 
+
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html">MAIN</a> <a href="editorials.html">EDITORIALS</a> <a href="developments.html">DEVELOPMENTS</a> <a href="#">GET SCOUTED</a> <a href="#">ABOUT</a> </div>
+<span  class="navigation" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div class="logo_favicon"><img src="logo-Favo.png" width="50" height="51" alt=""/></div>
+<div class="contenu"> Contenu mis après la video !!!!!!!!!  </div>
 </body>
 </html>

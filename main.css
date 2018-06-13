@@ -22,5 +22,12 @@ img{
 ul > li {
 	 float: left;
 	 list-style-type: none;
-	 margin-left: 33px;
+	margin-left: 33px;	
+	}
+
+.contenu {
+	background-position: center center;
+	background-color: aqua;
+	z-index: 5;
+	
 }
