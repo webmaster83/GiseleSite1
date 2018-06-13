@@ -1,7 +1,10 @@
 
 .contenu {
-	position: relative;
-	width: 1200px;
+	background-position: center center;
 	background-color: aqua;
-	margin: 250px auto;	
+	z-index: 5;
+	
+}
+.annule{
+	
 }

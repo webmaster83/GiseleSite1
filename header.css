@@ -2,10 +2,16 @@
 h1{
 	z-index: 1;
 	position:absolute;
-	top: 50%;
+	top: 40%;
 	text-align: center;
 }
 .responsive {
 	width: 100%;
     height: auto;
+}
+
+.logo_favicon {
+	float: left;
+	position: fixed;
+	margin: 20px;
 }
