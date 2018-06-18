@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.contenu  img {
+	float: left;
+}
+.contenu{
+	width: 1200px;
+	margin: 20px auto;
+	/*border: 1px solid black;*/
+}
+.annule{
+	clear: both;
+}
