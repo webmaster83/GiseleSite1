@@ -11,9 +11,16 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-$(document).ready(function(){
-	
+
+
+$(document).ready(function(openRech){
+	$('#zoneRech').width ="100%";
 });
+
+$(document).ready(function(closeRech){
+	$('#zoneRech').width ="0";
+});
+
 /*document.getElementById("mySidenav").style.width = "250px";
 	(document).ready(function(){
 			
