@@ -27,8 +27,21 @@ h1{
 #banniere {
 	background-color: #13ED25;
 	height: 250px;
-	content: url(LOGO-Gisele.png);
+	text-align: center;
+	padding-top: 80px;
+	background: url(image-appareil.jpg) no-repeat center
 }
-#banniere img {
-	height: 100%;
+.mySideRech {
+	 height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color:#E33639 ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+	opacity: 0.9;
 }

@@ -1,9 +1,10 @@
 
 .contenu1 {
 	position: relative;
-	width: 1200px;
+	width: 1400px;
 	background-color: none;
 	margin: 90px auto;
+	text-align: center;
 	z-index: -1;
 }
 .contenu2 {
@@ -11,6 +12,9 @@
 	width: 1200px;
 	margin: 90px auto;
 	z-index: -1;
+}
+.contenu1 img {
+	margin: 20px;
 }
 h2{
 	text-align: center;
