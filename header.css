@@ -23,3 +23,12 @@ h1{
 	opacity: 0.3;
 	
 }
+
+#banniere {
+	background-color: #13ED25;
+	height: 250px;
+	content: url(LOGO-Gisele.png);
+}
+#banniere img {
+	height: 100%;
+}
