@@ -8,11 +8,22 @@ h1{
 .responsive {
 	width: 100%;
 	margin-left: 20px;
-    /*height: auto;
-	z-index: 1;
+    height: auto;
+	/*z-index: 1;
 	top:50px ;*/
 }
-
+@media screen and (max-width: 920px){
+	.responsive{
+		width: 74.074%;
+		margin-top: -50px;
+	}
+}
+@media screen and (max-width: 760px){
+	.responsive{
+		width: 48.148%;
+		margin-top: -140px;
+	}
+}
 .logo_favicon {
 	position: fixed;
 	top:20px;
