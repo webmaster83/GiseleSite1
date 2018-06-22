@@ -4,8 +4,10 @@
 	float: left;
 }
 .contenu{
-	width: 1200px;
-	margin: 20px auto;
+	position: relative;
+	width: 100%;
+	margin: 0px;
+	top: -5px;
 	/*border: 1px solid black;*/
 }
 .annule{
