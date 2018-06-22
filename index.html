@@ -20,6 +20,39 @@
 	}
 	hr{ margin: 0 auto;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0px;
+}
+
+.column img {
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -35,7 +68,7 @@
 	<span style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="search_50.png" width="50" height="50" id="loupe" alt=""/></span> <!-- Fin  loupe nav-->
 </header>
 	<!--menus  slide -->
-<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html">MAIN</a> <a href="editorials.html">EDITORIALS</a> <a href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a><p style=" color: white; font-size: 30px; margin-top: 20px; font-family: Didot;">Follow me :</p>
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html">MAIN</a> <a href="editorials.html">EDITORIALS</a> <a href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a><p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
   <div class="reseaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="40" alt=""/></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" alt=""/></a></div>
 </div> <!--Fin menus  slide -->
 	<!-- Recherche  slide -->
@@ -51,12 +84,17 @@
 <div class="logo_favicon"><img src="logo-Favo.png"  alt="GTW Communications"/></div>
 
 	<!--contenu   -->
-<div  class="contenu"><img src="images 400/1.jpg" width="400" height="400" alt=""/><img src="images 400/2.jpg" width="400" height="250" alt=""/><img src="images 400/3.jpg" width="400" height="250" alt=""/><img src="images 400/5.jpg" width="400" height="240" alt=""/><img src="images 400/6.jpg" width="400" height="267" alt=""/><img  style="margin-top: -120px;" src="images 400/7.png" width="400" height="593" alt=""/><img style="margin-top: -27px;" src="images 400/8.jpg" width="400" height="250" alt=""/><img src="images 400/4.jpg" width="191" height="223" alt=""/><img src="images 400/9.png" width="209" height="223" alt=""/><img src="images 400/10.jpg" width="400" height="250" alt=""/><img src="images 400/3.jpg" width="400" height="250" alt=""/>
+<div><div class="row">
+  <div class="column"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> </div>
+  <div class="column"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"><img src="images/10.jpeg" style="width:100%"> </div>
+  <div class="column"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> </div>
+  <div class="column"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> </div>
+</div>
 </div>
 	<br class="annule"/>
 	
 		<!--Footer -->
-<footer style="text-align: center; margin-top: 50px; border-top: 1px solid #848484; padding: 50px;"><img src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="200" height="98"/><br/><br><p><a href="index.html">Main</a> | <a href="editorials.html">Editorials</a> | <a href="developments.html">Developments</a> | <a href="GetScouted.html">Get Scouted</a> | <a href="about.html">About</a></p><br>
-<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  2018 &copy; tous droits reservés</footer>
+<footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 50px;"><img src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/><br/><br><p><a href="index.html">Main</a>  &nbsp; &nbsp; | <a href="editorials.html">Editorials</a>&nbsp; &nbsp; | <a href="developments.html">Developments</a>&nbsp; &nbsp; | <a href="GetScouted.html">Get Scouted</a> &nbsp; &nbsp;| <a href="about.html">About</a></p><br>
+<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  2018 &copy; tous droits reservés</footer>
 </body>
 </html>

@@ -1,15 +1,12 @@
 @charset "utf-8";
 
 .contenu  img {
-	float: left;
+	/*float: left;*/
 }
-.contenu{
-	position: relative;
-	width: 100%;
-	margin: 0px;
-	top: -5px;
-	/*border: 1px solid black;*/
-}
+
 .annule{
 	clear: both;
+}
+.contenu ul li {
+	/*margin: 0px;*/
 }

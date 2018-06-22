@@ -24,13 +24,15 @@ img{
 	margin: 0px;
 }
 ul > li {
-	 float: left;
-	 list-style-type: none;
-	margin-left: 33px;	
-	}
-
+float: left;
+list-style-type: none;
+padding: 0 20px;}
+ul > li a{
+	text-decoration: none;
+	color: black;
+}
 
 .contenu {
-	text-align: center;
-	margin-top: 100px
+	width: 1322px;
+	margin: 10px auto;
 }
