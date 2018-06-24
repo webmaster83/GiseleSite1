@@ -1,41 +1,38 @@
-// JavaScript Document
-/* Set the width of the side navigation to 250px */
+// JavaScript Document		
 
-	
-		
-	
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+	document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("mySidenav").style.width = "0";
 }
 /* pour la recherche nom fonction change*/
 function openRech() {
-   document.getElementById("myNav").style.width = "100%";
+	document.getElementById("myNav").style.width = "100%";
 }
+
 function closeRech() {
-   document.getElementById("myNav").style.width = "0%";
+	document.getElementById("myNav").style.width = "0%";
 }
-
-/*$(document).ready(function(openRech){
-	$('#zoneRech').width ="100%";
+/* pour changer la couleur du menu après un scrollTop*/
+$(document).ready(function () {
+	$(window).scroll(function () {
+		var hauteurFenetre = $(window).scrollTop();
+		if (hauteurFenetre > 250) {
+			$(".navigation").css({
+				color: "black"
+			});
+			$(".recherche").css({
+				background: "url(search_50_noir.png) top right no-repeat"
+			});
+		} else {
+			$(".navigation").css({
+				color: "white"
+			});
+			$(".recherche").css({
+				background: "url(search_50.png) top right no-repeat"
+			});
+		}
+	});
 });
-
-$(document).ready(function(closeRech){
-	$('#zoneRech').width ="0";
-});*/
-
-/*document.getElementById("mySidenav").style.width = "250px";
-	(document).ready(function(){
-			
-function openNav() {
-   $("#mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-/*function closeNav() {
-   $("#mySidenav").style.width = "0";
-} 
-});*/
