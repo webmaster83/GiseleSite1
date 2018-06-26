@@ -27,6 +27,69 @@ hr{
 		margin:10px 0px;
 	    width: 100%;
 	}
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -47,38 +110,165 @@ hr{
 
 <div class="logo_favicon"><img  width="50" src="logo-Favo.png"  alt="GTW Communications"/></div>
 <!--contenu   -->
-<ul class="contenu">
-  <li><a href="#">A</a></li>
-  <li><a href="#">B</a></li>
-  <li><a href="#">C</a></li>
-  <li><a href="#">D</a></li>
-  <li><a href="#">E</a></li>
-  <li><a href="#">F</a></li>
-  <li><a href="#">G</a></li>
-  <li><a href="#">H</a></li>
-  <li><a href="#">I</a></li>
-  <li><a href="#">J</a></li>
-  <li><a href="#">K</a></li>
-  <li><a href="#">L</a></li>
-  <li><a href="#">M</a></li>
-  <li><a href="#">N</a></li>
-  <li><a href="#">O</a></li>
-  <li><a href="#">P</a></li>
-  <li><a href="#">Q</a></li>
-  <li><a href="#">R</a></li>
-  <li><a href="#">S</a></li>
-  <li><a href="#">T</a></li>
-  <li><a href="#">U</a></li>
-  <li><a href="#">V</a></li>
-  <li><a href="#">W</a></li>
-  <li><a href="#">X</a></li>
-  <li><a href="#">Y</a></li>
-  <li><a href="#">Z</a></li>
-</ul><br/>
+<div class="contenu">
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('A')"> A</button>
+    <button class="btn" onclick="filterSelection('B')"> B</button>
+    <button class="btn" onclick="filterSelection('C')"> C</button>
+    <button class="btn" onclick="filterSelection('D')"> D</button>
+    <button class="btn" onclick="filterSelection('E')"> E</button>
+    <button class="btn" onclick="filterSelection('F')"> F</button>
+    <button class="btn" onclick="filterSelection('G')"> G</button>
+    <button class="btn" onclick="filterSelection('H')"> H</button>
+    <button class="btn" onclick="filterSelection('I')"> I</button>
+    <button class="btn" onclick="filterSelection('J')"> J</button>
+    <button class="btn" onclick="filterSelection('K')"> K</button>
+    <button class="btn" onclick="filterSelection('L')"> L</button>
+    <button class="btn" onclick="filterSelection('M')"> M</button>
+    <button class="btn" onclick="filterSelection('N')"> N</button>
+    <button class="btn" onclick="filterSelection('O')"> O</button>
+    <button class="btn" onclick="filterSelection('P')"> P</button>
+    <button class="btn" onclick="filterSelection('Q')"> Q</button>
+    <button class="btn" onclick="filterSelection('R')"> R</button>
+    <button class="btn" onclick="filterSelection('S')"> S</button>
+    <button class="btn" onclick="filterSelection('T')"> T</button>
+    <button class="btn" onclick="filterSelection('U')"> U</button>
+    <button class="btn" onclick="filterSelection('V')"> V</button>
+    <button class="btn" onclick="filterSelection('W')"> W</button>
+    <button class="btn" onclick="filterSelection('X')"> X</button>
+    <button class="btn" onclick="filterSelection('Y')"> Y</button>
+    <button class="btn" onclick="filterSelection('Z')"> Z</button>
+  </div>
+</div>
 	<hr/>
-	<div class="contenu1"><img src="imagesDevel/3.jpg" width="400" height="225" alt=""/><img src="imagesDevel/2.jpg" width="400" height="225" alt=""/><img src="imagesDevel/9.jpg" width="400" height="225" alt=""/><img src="imagesDevel/4.jpg" width="400" height="225" alt=""/><img src="imagesDevel/5.jpg" width="400" height="225" alt=""/><img src="imagesDevel/6.jpg" width="400" height="225" alt=""/><img src="imagesDevel/7.jpg" width="400" height="225" alt=""/><img src="imagesDevel/8.jpg" width="400" height="225" alt=""/><img src="imagesDevel/1.jpg" width="400" height="225" alt=""/></div>
+	<!-- Portfolio Gallery Grid -->
+<div class="contenu">
+  <div class="row">
+    <div class="column A">
+      <div class="content">
+        <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
+        <h4>Alexandra</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column B">
+      <div class="content">
+        <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
+        <h4>Béatrice</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+      <div class="column B">
+        <div class="content">
+          <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
+          <h4>Bande</h4>
+          <p>Filles</p>
+        </div>
+    </div>
+    <div class="column C">
+      <div class="content">
+        <img src="imagesDevel/9.jpg" width="400" height="225" alt=""/>
+        <h4>Caroline</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+        
+    <div class="column D">
+      <div class="content">
+        <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
+        <h4>Diane</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column E">
+      <div class="content">
+        <img src="imagesDevel/4.jpg" width="400" height="225" alt=""/>
+        <h4>Ernest</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column F">
+      <div class="content">
+        <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
+        <h4>Filles</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+        
+    <div class="column G">
+      <div class="content">
+        <img src="imagesDevel/6.jpg" width="400" height="225" alt=""/>
+        <h4>Girl</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column H">
+      <div class="content">
+        <img src="imagesDevel/7.jpg" width="400" height="225" alt=""/>
+        <h4>Helga</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column H">
+      <div class="content">
+        <img src="imagesDevel/8.jpg" width="400" height="225" alt=""/>
+        <h4>Hermance</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+</div>
+
 <!--Footer -->
 <footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 50px;"><img src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/><br/><br><p><a href="index.html">Main</a>  &nbsp; &nbsp; | <a href="editorials.html">Editorials</a>&nbsp; &nbsp; | <a href="developments.html">Developments</a>&nbsp; &nbsp; | <a href="GetScouted.html">Get Scouted</a> &nbsp; &nbsp;| <a href="about.html">About</a></p><br>
 <a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  2018 &copy; tous droits reservés</footer>
+<!--Script Filter -->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 </body>
 </html>
