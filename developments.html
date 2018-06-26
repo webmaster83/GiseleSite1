@@ -39,7 +39,7 @@ h1 {
 }
 
 .row {
-    margin: 10px -16px;
+    margin: 0px 50px;
 }
 
 /* Add padding BETWEEN each column */
@@ -90,11 +90,50 @@ h1 {
   background-color: #666;
   color: white;
 }
+	/*Effet sur img*/
+.effetImg {
+  position: relative;
+  width: 400px; /*largeur image*/
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cadreTrans {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.effetImg:hover .cadreTrans {
+  opacity: 0.8;
+}
+
+.textImg {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+text-transform: uppercase;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body style="text-align: center">
 <!--header   -->
 <header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span> 
   <div id="banniere"><img src="Developments-image.png" width="745" height="64" alt=""/></div>
@@ -143,78 +182,109 @@ h1 {
 </div>
 	<hr/>
 	<!-- Portfolio Gallery Grid -->
-<div class="contenu">
+<div class="contenu2">
   <div class="row">
     <div class="column A">
       <div class="content">
-        <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
-        <h4>Alexandra</h4>
-        <p>Lorem ipsum dolor..</p>
+      <!-- effet sur image -->
+        <div class="effetImg">
+   <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>	<!-- effet sur image -->
       </div>
     </div>
     <div class="column B">
       <div class="content">
-        <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
-        <h4>Béatrice</h4>
-        <p>Lorem ipsum dolor..</p>
+        <div class="effetImg">
+   <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
       <div class="column B">
         <div class="content">
-          <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
-          <h4>Bande</h4>
-          <p>Filles</p>
+         <div class="effetImg">
+   <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
         </div>
     </div>
     <div class="column C">
       <div class="content">
-        <img src="imagesDevel/9.jpg" width="400" height="225" alt=""/>
-        <h4>Caroline</h4>
-        <p>Lorem ipsum dolor..</p>
+         <div class="effetImg">
+   <img src="imagesDevel/9.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
         
     <div class="column D">
       <div class="content">
-        <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
-        <h4>Diane</h4>
-        <p>Lorem ipsum dolor..</p>
+        <div class="effetImg">
+   <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
     <div class="column E">
       <div class="content">
-        <img src="imagesDevel/4.jpg" width="400" height="225" alt=""/>
-        <h4>Ernest</h4>
-        <p>Lorem ipsum dolor..</p>
+        <div class="effetImg">
+   <img src="imagesDevel/4.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
     <div class="column F">
       <div class="content">
-        <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
-        <h4>Filles</h4>
-        <p>Lorem ipsum dolor..</p>
+        <div class="effetImg">
+   <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
         
     <div class="column G">
       <div class="content">
-        <img src="imagesDevel/6.jpg" width="400" height="225" alt=""/>
-        <h4>Girl</h4>
-        <p>Lorem ipsum dolor..</p>
+        <div class="effetImg">
+   <img src="imagesDevel/6.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
     <div class="column H">
       <div class="content">
-        <img src="imagesDevel/7.jpg" width="400" height="225" alt=""/>
-        <h4>Helga</h4>
-        <p>Lorem ipsum dolor..</p>
+       <div class="effetImg">
+   <img src="imagesDevel/7.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
     <div class="column H">
       <div class="content">
-        <img src="imagesDevel/8.jpg" width="400" height="225" alt=""/>
-        <h4>Hermance</h4>
-        <p>Lorem ipsum dolor..</p>
+        <div class="effetImg">
+   <img src="imagesDevel/8.jpg" width="400" height="225" alt=""/>
+  <div class="cadreTrans">
+    <div class="textImg">Discover</div>
+  </div>
+</div>
       </div>
     </div>
   <!-- END GRID -->

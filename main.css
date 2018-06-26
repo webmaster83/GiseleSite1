@@ -8,10 +8,8 @@
 	z-index: -1;
 }
 .contenu2 {
-	position: relative;
-	width: 1200px;
-	margin: 90px auto;
-	z-index: -1;
+	text-align: center;
+	margin: 10px auto;
 }
 .contenu1 img {
 	margin: 20px;
