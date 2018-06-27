@@ -3,7 +3,6 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="navigationJS.js"></script>
-<script type="text/javascript" src="RechercheJS2.js"></script>
 <link href="Favicon.jpg" rel="icon" type="image/x-icon" />
 <link href="reset.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
@@ -65,6 +64,7 @@
 .reseaux a{
 		display: inline;
 	}
+	hr{ margin: 0 auto;}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -82,7 +82,14 @@
 <!--<span  class="navigation" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>-->
 
 <div class="logo_favicon"><img width="50" src="logo-Favo.png"  alt="GTW Communications"/></div>
-
+<!-- Recherche  slide -->
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
+  <div class="search-content">
+    <input placeholder="search" class="maRecherche" type="text" id="Autocomplete1">
+	  <hr/>
+  </div>
+</div><!-- Fin Recherche  slide -->
 	<!--contenu   -->
 
 	<!-- Photo Grid -->
