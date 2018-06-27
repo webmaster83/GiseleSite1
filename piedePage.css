@@ -2,7 +2,7 @@
 footer .reseaux {
 	margin-left: 50px;
 	vertical-align: middle;
-	opacity: 0.2;
+	opacity: 0.15;
 	transition: .3s ease-in-out;
 }
 footer .reseaux:hover {
