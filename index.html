@@ -53,11 +53,15 @@
     max-width: 100%;
   }
 }
+#filter li  {
+		float: none;
+	}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body><script type="text/javascript" src="RechercheJS2.js"></script>
+
 	
 <header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer;" onclick="openNav()">&#9776;</span> <!--fin menu nav   -->
   <video id="myVideo" preload="auto" muted="muted" autoplay="autoplay" loop="loop">
@@ -75,8 +79,16 @@
 	<div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
   <div class="search-content">
-    <input placeholder="search" class="maRecherche" type="text" id="Autocomplete1">
+   <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
 	  <hr/>
+	  <ul  id="filter"><!-- Filter  slide -->
+  <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
+ <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
+ <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
+<li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
+		  <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
+</ul>
+	
   </div>
 </div><!-- Fin Recherche  slide -->
 
