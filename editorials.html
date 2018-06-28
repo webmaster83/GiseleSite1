@@ -14,6 +14,8 @@
 <link href="RechercheSlide.css" rel="stylesheet" type="text/css">
 <link href="contenu.css" rel="stylesheet" type="text/css">
 <link href="piedePage.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="RechercheJS2.js"></script>
+
 <style type="text/css">
 	.logo_favicon {
 		opacity: 1;
@@ -66,7 +68,7 @@
 	}
 	hr{ margin: 0 auto;}
 #filter li  {
-		float: none;
+		text-align: left;
 	}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -84,7 +86,7 @@
 <div class="reseaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="40" alt=""/></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" alt=""/></a></div></div>
 <!--<span  class="navigation" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>-->
 
-<div class="logo_favicon"><img width="50" src="logo-Favo.png"  alt="GTW Communications"/></div>
+<div class="logo_favicon"></div>
 <!-- Recherche  slide -->
 	<div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
@@ -106,10 +108,10 @@
 	<!-- Photo Grid -->
 <div class="editorailImgs">
   <div class="row">
-    <div class="column"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> </div>
-    <div class="column"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"><img src="images/10.jpeg" style="width:100%"> </div>
-    <div class="column"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> </div>
-    <div class="column"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> </div>
+    <div class="column"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/4.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  </div>
+    <div class="column"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"><img src="images/10.jpeg" style="width:100%"> <img src="images/4.jpg" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/8.jpg" style="width:100%">  <img src="images/7.jpeg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  </div>
+    <div class="column"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  <img src="images/4.jpg" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  <img src="images/7.jpeg" style="width:100%"> </div>
+    <div class="column"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/9.png" style="width:100%">  <img src="images/8.jpg" style="width:100%">  <img src="images/7.jpeg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/4.jpg" style="width:100%">  </div>
   </div>
 </div>
 	

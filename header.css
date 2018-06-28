@@ -25,14 +25,7 @@ h1{
 	}
 }
 .logo_favicon {
-	position: fixed;
-	top:20px;
-	margin: 15px 20px;
-	cursor: pointer;
-	z-index: 2;
-	width: 100px;
-	opacity: 1;
-	
+	float: left;
 }
 
 #banniere {
