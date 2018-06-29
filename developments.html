@@ -2,6 +2,8 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="localScroll.js"></script>
+<script type="text/javascript" src="ScrollTo.js"></script>
 <script type="text/javascript" src="navigationJS.js"></script>
 <script type="text/javascript" src="RechercheJS2.js"></script>
 <link href="Favicon.jpg" rel="icon" type="image/x-icon" />
@@ -23,77 +25,21 @@
 .reseaux a {
 	display: inline;
 }
-hr{
-		margin:10px 0px;
-	    width: 100%;
+hr{margin:10px 0px;
+	    width: 100%;}
+
+hr{ margin: 0 auto;
+	width: 90%;}
+#filter li  {
+	text-align: left;
 	}
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
 
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
-
-.row {
-    margin: 0px 50px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: white;
-    padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-	/*Effet sur img*/
+	/* mes Effets sur img*/
 .effetImg {
   position: relative;
-  width: 400px; /*largeur image*/
+  width: 400px;
+display: inline-block;
+margin: 10px;
 }
 
 .image {
@@ -117,34 +63,25 @@ h1 {
 
 .effetImg:hover .cadreTrans {
   opacity: 0.8;
-cursor: pointer;
+	cursor: pointer;
 }
 
 .textImg {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-font-style: italic;
-}
-.effetImg h2 {
+color: white;
+font-size: 20px;
 position: absolute;
-color: #00a5ff;
-top: 0;
-right: 0px;
-display: inline-block;
-text-transform: uppercase;
-padding: 10px 10px;
-background-color: #666;
-font-size: 14px;
-	}
-hr{ margin: 0 auto;
-	width: 90%;}
-#filter li  {
-	text-align: left;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 120%);
+text-align: center;
+font-style: italic;
+border: 1px solid white;
+padding: 5px;
+}
+/* FIN Effets sur img voir Demo local*/
+	h2{
+		text-align: justify;
+		color: #777;
 	}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -183,197 +120,230 @@ hr{ margin: 0 auto;
 </div><!-- Fin Recherche  slide -->
 <!--contenu   -->
 <div class="contenu">
-  <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('A')"> A</button>
-    <button class="btn" onclick="filterSelection('B')"> B</button>
-    <button class="btn" onclick="filterSelection('C')"> C</button>
-    <button class="btn" onclick="filterSelection('D')"> D</button>
-    <button class="btn" onclick="filterSelection('E')"> E</button>
-    <button class="btn" onclick="filterSelection('F')"> F</button>
-    <button class="btn" onclick="filterSelection('G')"> G</button>
-    <button class="btn" onclick="filterSelection('H')"> H</button>
-    <button class="btn" onclick="filterSelection('I')"> I</button>
-    <button class="btn" onclick="filterSelection('J')"> J</button>
-    <button class="btn" onclick="filterSelection('K')"> K</button>
-    <button class="btn" onclick="filterSelection('L')"> L</button>
-    <button class="btn" onclick="filterSelection('M')"> M</button>
-    <button class="btn" onclick="filterSelection('N')"> N</button>
-    <button class="btn" onclick="filterSelection('O')"> O</button>
-    <button class="btn" onclick="filterSelection('P')"> P</button>
-    <button class="btn" onclick="filterSelection('Q')"> Q</button>
-    <button class="btn" onclick="filterSelection('R')"> R</button>
-    <button class="btn" onclick="filterSelection('S')"> S</button>
-    <button class="btn" onclick="filterSelection('T')"> T</button>
-    <button class="btn" onclick="filterSelection('U')"> U</button>
-    <button class="btn" onclick="filterSelection('V')"> V</button>
-    <button class="btn" onclick="filterSelection('W')"> W</button>
-    <button class="btn" onclick="filterSelection('X')"> X</button>
-    <button class="btn" onclick="filterSelection('Y')"> Y</button>
-    <button class="btn" onclick="filterSelection('Z')"> Z</button>
-  </div>
+ <ul>
+    <li><a href="#a">A</a></li>
+    <li><a href="#b">B</a></li>
+    <li><a href="#c">C</a></li>
+    <li><a href="#4">D</a></li>
+    <li><a href="#5">E</a></li>
+	 <li><a href="#6">F</a></li>
+	 <li><a href="#7">G</a></li>
+	 <li><a href="#8">H</a></li>
+	 <li><a href="#9">I</a></li>
+	 <li><a href="#10">J</a></li>
+	 <li><a href="#11">K</a></li>
+	 <li><a href="#12">L</a></li>
+	 <li><a href="#13">M</a></li>
+	 <li><a href="#14">N</a></li>
+	 <li><a href="#15">O</a></li>
+	 <li><a href="#16">E</a></li>
+	 <li><a href="#17">P</a></li>
+	 <li><a href="#18">Q</a></li>
+	 <li><a href="#19">R</a></li>
+	 <li><a href="#20">S</a></li>
+	 <li><a href="#21">T</a></li>
+	 <li><a href="#22">U</a></li>
+	 <li><a href="#23">V</a></li>
+	 <li><a href="#24">W</a></li>
+	 <li><a href="#25">X</a></li>
+	 <li><a href="#26">Y</a></li>
+	 <li><a href="#27">Z</a></li>
+  </ul>
 </div>
-	<hr/>
+	<hr style="width: 100%; margin-top:5px;">
 	<!-- Portfolio Gallery Grid -->
 <div class="contenu2">
-  <div class="row">
-    <div class="column A">
-      <div class="content">
-      <!-- effet sur image -->
-        <div class="effetImg">
-   <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-	 
-  </div>
-<h2>Alexandra</h2>
-</div>	<!-- effet sur image -->
-      </div>
-    </div>
-    <div class="column B">
-      <div class="content">
-        <div class="effetImg">
-   <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Béatrice</h2>
+	
+<div class="effetImg" id="a">
+  <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
 </div>
-      </div>
-    </div>
-      <div class="column B">
-        <div class="content">
-         <div class="effetImg">
-   <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Bande</h2>
+<div class="effetImg">
+  <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
+</div>		
+<div class="effetImg">
+  <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
 </div>
-        </div>
-    </div>
-    <div class="column C">
-      <div class="content">
-         <div class="effetImg">
-   <img src="imagesDevel/9.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Caroline</h2>
+<div class="effetImg">
+  <img src="imagesDevel/4.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/6.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/7.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
 </div>
-      </div>
-    </div>
-        
-    <div class="column D">
-      <div class="content">
-        <div class="effetImg">
-   <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Diane</h2>
+<div class="effetImg">
+  <img src="imagesDevel/8.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>Amal</h2>
 </div>
-      </div>
-    </div>
-    <div class="column E">
-      <div class="content">
-        <div class="effetImg">
-   <img src="imagesDevel/4.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Eden</h2>
+<div class="effetImg" id="b">
+  <img src="imagesDevel/9.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
 </div>
-      </div>
-    </div>
-    <div class="column F">
-      <div class="content">
-        <div class="effetImg">
-   <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Filles</h2>
+<div class="effetImg" id="">
+  <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
 </div>
-      </div>
-    </div>
-        
-    <div class="column G">
-      <div class="content">
-        <div class="effetImg">
-   <img src="imagesDevel/6.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Girl</h2>
+<div class="effetImg">
+  <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
+</div>		
+<div class="effetImg">
+  <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
 </div>
-      </div>
-    </div>
-    <div class="column H">
-      <div class="content">
-       <div class="effetImg">
-   <img src="imagesDevel/7.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Helga</h2>
+<div class="effetImg">
+  <img src="imagesDevel/4.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/6.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/7.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
 </div>
-      </div>
-    </div>
-    <div class="column H">
-      <div class="content">
-        <div class="effetImg">
-   <img src="imagesDevel/8.jpg" width="400" height="225" alt=""/>
-  <div class="cadreTrans">
-    <div class="textImg">Discover</div>
-  </div><h2>Hermance</h2>
+<div class="effetImg">
+  <img src="imagesDevel/8.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
 </div>
-      </div>
-    </div>
-  <!-- END GRID -->
-  </div>
+<div class="effetImg">
+  <img src="imagesDevel/9.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
 </div>
+<div class="effetImg" id="">
+  <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
+</div>
+<div class="effetImg" id="">
+  <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
+</div>		
+<div class="effetImg">
+  <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>B</h2>
+</div>
+<div class="effetImg" id="c">
+  <img src="imagesDevel/4.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/5.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/6.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>	
+<div class="effetImg">
+  <img src="imagesDevel/7.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>
+<div class="effetImg">
+  <img src="imagesDevel/8.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>
+<div class="effetImg">
+  <img src="imagesDevel/9.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>
+<div class="effetImg" id="">
+  <img src="imagesDevel/1.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>
+<div class="effetImg" id="">
+  <img src="imagesDevel/2.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>		
+<div class="effetImg">
+  <img src="imagesDevel/3.jpg" width="400" height="225" alt=""/>
+<div class="cadreTrans">
+  <div class="textImg">Discover</div>
+</div><h2>C</h2>
+</div>
+</div>	
 
+ 
 <!--Footer -->
-<footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 50px;"><img src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/><br/><br><p><a href="index.html">Main</a>  &nbsp; &nbsp; | <a href="editorials.html">Editorials</a>&nbsp; &nbsp; | <a href="developments.html">Developments</a>&nbsp; &nbsp; | <a href="GetScouted.html">Get Scouted</a> &nbsp; &nbsp;| <a href="about.html">About</a></p><br>
-<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  2018 &copy; tous droits reservés</footer>
-<!--Script Filter -->
+<footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 30px;"><img src="logo-Favo-2.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp;<img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/> &nbsp;&nbsp; &nbsp;<p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p><br>
+<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; <span class="languages"><img src="anglet-Drp.png" alt=""/> &nbsp;<img src="fr-drp.jpg" alt=""/></span><span class="copyright">2018 &copy; Tous Droits Reservés</span></footer>
 <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
+	$(document).ready(function(){
+		$.localScroll();
+					  });
+	</script>
 </body>
 </html>
