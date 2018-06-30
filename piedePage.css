@@ -33,8 +33,11 @@ p a:active{
 	color: black;
 }
 .languages {
-margin-top: 12px;
-position: absolute;
+color: white;
+border-radius: 50%;
+border: 1px solid white;
+padding: 7px;
+	position: relative; top: 10px;
 }
 
 .copyright {

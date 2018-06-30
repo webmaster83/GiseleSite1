@@ -2,9 +2,11 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="navigationJS.js"></script>
+<script type="text/javascript" src="navigationJS.js"></script><script type="text/javascript" src="RechercheJS2.js"></script>
 <link href="Favicon.jpg" rel="icon" type="image/x-icon" />
 <link href="reset.css" rel="stylesheet" type="text/css">
+<link href="piedePage.css" rel="stylesheet" type="text/css">
+<link href="RechercheSlide.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
 <title>Page About Gisèle</title>
 <link href="Navigation.css" rel="stylesheet" type="text/css">
@@ -12,32 +14,47 @@
 .reseaux a {
 	display: inline;
 }
-
+hr{ margin: 0 auto;
+}
 /*element javascript #mySidenav*/
 </style>
-<link href="piedePage.css" rel="stylesheet" type="text/css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<header> <!--menu nav   --><span style="font-size:50px;cursor:pointer; color: black;margin: -50px 30px;
-float: right;
-z-index: 3;
-position: fixed;
-	right: 0px;" onclick="openNav()">&#9776;</span></header>
-<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-  <a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a>
-<p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
+<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; color: black; margin-top: -50px" onclick="openNav()">&#9776;</span> <!--fin menu nav   -->
+	<!--  loupe nav-->
+	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="search_50_noir.png" width="50" height="50" alt=""/></span> 
+	<!-- Fin  loupe nav-->
+</header>
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a>
+  <p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
   <div class="reseaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="40" alt=""/></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" alt=""/></a></div>
-<img src="anglet-Drp.png" alt=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fr-drp.jpg"  alt=""/></div>
+  <img src="anglet-Drp.png" alt=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fr-drp.jpg"  alt=""/></div>
 <!--<span  class="navigation" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>--> 
 
 <!--  loupe  
 <span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="search_50_noir.png" width="50" height="50" alt=""/></span> nav--><!-- Fin  loupe nav--> 
-
+<!-- Recherche  slide -->
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
+  <div class="search-content">
+   <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
+	  <hr/>
+	  <ul  id="filter"><!-- Filter  slide -->
+  <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
+ <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
+ <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
+<li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
+	    <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
+</ul>
+	
+  </div>
+</div><!-- Fin Recherche  slide -->
 <!--  contenu -->
 <div style="margin-top: 100px; text-align: center">
-  <h1 style="font-size: 50px">ABOUT</h1>
+  <h2><img src="About.png" width="182" height="42" alt="About gisele the writer"/></h2>
   <br>
   <br>
   <br>
@@ -70,10 +87,15 @@ position: fixed;
   <p>Business Inquiries<br>
     <a href="mailto:management@gtwcommunications.com" style="border-right: none;">management@gtwcommunications.com</a><br>
     Invitations & Press<br>
-    <a href="mailto:management@gtwcommunications.com" style="border-right: none;">press@gtwcommunications</a></p><br><br><br>
-		<!--Footer -->
-<footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 30px;"><img src="logo-Favo-2.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp;<img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/> &nbsp;&nbsp; &nbsp;<p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p><br>
-<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; <span class="languages"><img src="anglet-Drp.png" alt=""/> &nbsp;<img src="fr-drp.jpg" alt=""/></span><span class="copyright">2018 &copy; Tous Droits Reservés</span></footer>
+    <a href="mailto:management@gtwcommunications.com" style="border-right: none;">press@gtwcommunications</a></p>
+  <br>
+  <br>
+  <br>
+  <!--Footer -->
+  <footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 30px;"><img src="logo-Favo-2.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp;<img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/> &nbsp;&nbsp; &nbsp;
+    <p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p>
+    <br>
+    <a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; <span class="languages"><img src="anglet-Drp.png" alt=""/> &nbsp;<img src="fr-drp.jpg" alt=""/></span><span class="copyright">2018 &copy; Tous Droits Reservés</span></footer>
 </div>
 </body>
 </html>

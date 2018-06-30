@@ -12,13 +12,12 @@ body {
     top: 0;
     right: 0;
     background-color: #111;
-    overflow: hidden;
+    overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     text-align:center;
 	opacity: 0.9;
 }
-
 .sidenav  a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -48,11 +47,18 @@ position: fixed;
 right: 0px; /*pour le fixé à droite*/
 color:white;	
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav .closebtn {
+       font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+.sidenav a {
+    font-size: 30px;
 }
-
+                                      } 
 #mySidenav img {
 	margin: 0px;
 }
