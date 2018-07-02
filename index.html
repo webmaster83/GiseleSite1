@@ -15,101 +15,107 @@
 <link href="contenu.css" rel="stylesheet" type="text/css">
 <link href="piedePage.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	.reseaux a{
-		display: inline;
-	}
-	hr{ margin: 0 auto;
+.reseaux a {
+	display: inline;
+}
+hr {
+	margin: 0 auto;
 }
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 0px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0px;
 }
-
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 0px;
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 0px;
 }
-
 .column img {
-  margin-top: -5px;
-  vertical-align: middle;
+	margin-top: -5px;
+	vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+.column {
+	flex: 50%;
+	max-width: 50%;
+}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+.column {
+	flex: 100%;
+	max-width: 100%;
 }
-#filter li  {
-		float: none;
-	}
+}
+#filter li {
+	float: none;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body><script type="text/javascript" src="RechercheJS2.js"></script>
-
-	
+<body>
+<script type="text/javascript" src="RechercheJS2.js"></script>
 <header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer;" onclick="openNav()">&#9776;</span> <!--fin menu nav   -->
   <video id="myVideo" preload="auto" muted="muted" autoplay="autoplay" loop="loop">
     <source src="gisele_video.mp4" type="video/mp4">
   </video>
-	<h1><img class="responsive" src="LOGO-Gisele.png" alt="GTW Communications"/></h1>
-	<!--  loupe nav-->
-	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="vide_rech.png" width="50" height="50" alt=""/></span> <!-- Fin  loupe nav-->
+  <h1><img class="responsive" src="LOGO-Gisele.png" alt="GTW Communications"/></h1>
+  <!--  loupe nav--> 
+  <span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="vide_rech.png" width="50" height="50" alt=""/></span> <!-- Fin  loupe nav--> 
 </header>
-	<!--menus  slide -->
-<div id="mySidenav" class="sidenav">
-<nav><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-  <a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a class="three" href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a></nav>
-<p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
+<!--menus  slide -->
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="nav"><a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a class="three" href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a></div>
+  <p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
   <div class="reseaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="40" alt=""/></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" alt=""/></a></div>
-<span class="languages">FR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="languages">EN</span></div> <!--Fin menus  slide -->
-	<!-- Recherche  slide -->
-	<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
+  <span class="languages">FR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="languages">EN</span></div>
+<!--Fin menus  slide --> 
+<!-- Recherche  slide -->
+<div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
   <div class="search-content">
-   <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
-	  <hr/>
-	  <ul  id="filter"><!-- Filter  slide -->
-  <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
- <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
- <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
-<li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
-	    <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
-</ul>
-	
+    <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
+    <hr/>
+    <ul  id="filter">
+      <!-- Filter  slide -->
+      <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
+      <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
+      <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
+      <li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
+      <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
+    </ul>
   </div>
-</div><!-- Fin Recherche  slide -->
-
+</div>
+<!-- Fin Recherche  slide -->
 
 <div class="logo_favicon"></div>
 
-	<!--contenu   -->
-<div><div class="row">
-  <div class="column"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"><img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"><img src="images/5.jpg" style="width:100%"></div>
-  <div class="column"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"><img src="images/10.jpeg" style="width:100%"><img src="images/6.jpg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"><img src="images/9.png" style="width:100%"><img src="images/8.jpg" style="width:100%"><img src="images/7.jpeg" style="width:100%"><img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"></div>
-  <div class="column"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"><img src="images/10.jpeg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/2.jpg" style="width:100%"><img src="images/1.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"></div>
-  <div class="column"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"><img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> </div>
+<!--contenu   -->
+<div>
+  <div class="row">
+    <div class="column"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"><img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"><img src="images/5.jpg" style="width:100%"></div>
+    <div class="column"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"><img src="images/10.jpeg" style="width:100%"><img src="images/6.jpg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"><img src="images/9.png" style="width:100%"><img src="images/8.jpg" style="width:100%"><img src="images/7.jpeg" style="width:100%"><img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"></div>
+    <div class="column"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"><img src="images/10.jpeg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/2.jpg" style="width:100%"><img src="images/1.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"></div>
+    <div class="column"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"><img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"><img src="images/3.jpg" style="width:100%"><img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> </div>
+  </div>
 </div>
-</div>
-	<br class="annule"/>
-	
-		<!--Footer -->
-<footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 30px;"><img src="logo-Favo-2.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp;<img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/> &nbsp;&nbsp; &nbsp;<p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p><br>
-<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp;<span class="copyright">2018 &copy; Tous Droits Reservés</span></footer>
+<br class="annule"/>
+
+<!--Footer -->
+<footer style="background-color: black;">
+  <div class="premierLigneFooter"><img style="margin-right: 25px" src="logo-Favo-2.png" alt=""/><img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="219" height="87"/>
+    <p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p>
+    <div class="reseauxSociaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a></div>
+  </div>
+  <div class="premierDeuFooter">
+  <div class="copyright"> Tous Droits Reservés &copy; 2018 GTW Communications.</div><div class="copyright" style="float: right;">  <span style="color: #454545;">Design</span> GTW & Communications | <span style="color: #454545;">Development</span> NACHIT
+  </div>
+  </div>
+</footer>
 </body>
 </html>

@@ -2,35 +2,31 @@
 footer .reseaux {
 	margin-left: 20px;
 	vertical-align: middle;
-	opacity: 0.15;
+	opacity: 0.3;
 	transition: .3s ease-in-out;
 }
 footer .reseaux:hover {
-	margin-left: 20px;
-	vertical-align: middle;
-	opacity: 0.5;
+	opacity: 0.9;
 }
 footer p {
 	display: inline-block;
-	top: -30px;
 	position: relative;
+	top:-30px;
 }
 p a {
 	text-decoration: none;
-	color: #5e5e5e;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-family:"OpenSans Light";
 	text-transform:uppercase;
-	padding: 0 6px 0 7px;
+	padding: 0 20px 0 20px;
 	font-size: 11px;
-	border-right: 1px solid #5e5e5e;
+	color: white;
+	letter-spacing: 3px;
 }
 p a:hover {
-	color: black;
-	text-decoration-line: underline;
-	text-decoration-style: solid;
+
 }
 p a:active{
-	color: black;
+	color: white;
 }
 .languages {
 color: white;
@@ -39,12 +35,28 @@ border: 1px solid white;
 padding: 7px;
 	position: relative; top: 10px;
 }
-
+.premierLigneFooter{
+	width: 1200px;
+	text-align: center;
+	background-color: #000;
+	margin: 0 auto;
+	padding: 30px;
+}
+.reseauxSociaux{
+vertical-align: top;
+display: inline-block;
+margin-top: 30px;
+}
 .copyright {
 	position: relative;
-	margin-left: 80px;
-	font-family:  Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	color: #6c6c6c;
+	color: white;
+	font-family: Didot;
+	font-size:11px;
+	display: inline-block;
 }
-
-
+.premierDeuFooter {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 10px 35px;
+	text-align: justify;
+}

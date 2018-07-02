@@ -5,7 +5,7 @@ h1{
 	position:absolute;
 	top: 200px;
 }
-nav a::after {
+#nav a::after {
   border-bottom: 1px solid #fff;
   content: '';
   display: block;
@@ -15,8 +15,8 @@ nav a::after {
   width: 0%;
 }
 
-nav a:hover::after,
-nav .current-menu-item a::after {
+#nav a:hover::after,
+#nav .current-menu-item a::after {
   width: 13%;
 	margin: 0 auto;
 }
