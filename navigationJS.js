@@ -36,3 +36,8 @@ $(document).ready(function () {
 		}
 	});
 });
+/* pour slider en scroll avec 2 fichier localscroll et scrolTo*/
+	$(document).ready(function(){
+		$.localScroll();
+					  });
+	

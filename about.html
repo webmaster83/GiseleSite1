@@ -2,9 +2,11 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="navigationJS.js"></script>
+<script type="text/javascript" src="navigationJS.js"></script><script type="text/javascript" src="RechercheJS2.js"></script>
 <link href="Favicon.jpg" rel="icon" type="image/x-icon" />
 <link href="reset.css" rel="stylesheet" type="text/css">
+<link href="piedePage.css" rel="stylesheet" type="text/css">
+<link href="RechercheSlide.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
 <title>Page About Gisèle</title>
 <link href="Navigation.css" rel="stylesheet" type="text/css">
@@ -12,68 +14,91 @@
 .reseaux a {
 	display: inline;
 }
-
+hr{ margin: 0 auto;
+}
 /*element javascript #mySidenav*/
 </style>
-<link href="piedePage.css" rel="stylesheet" type="text/css">
+<link href="header.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-<header> <!--menu nav   --><span style="font-size:50px;cursor:pointer; color: black;margin: -50px 30px;
-float: right;
-z-index: 3;
-position: fixed;
-	right: 0px;" onclick="openNav()">&#9776;</span></header>
-<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-  <a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a>
-<p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
+<body style="text-align: center">
+<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; margin-top: -50px" onclick="openNav()"><img src="menu_noir_ham.png" width="50" height="49" alt="menu gisle"/></span> <!--fin menu nav   -->
+	<!--  loupe nav-->
+	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="search_50_noir.png" width="50" height="50" alt=""/></span> 
+	<!-- Fin  loupe nav-->
+</header>
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="nav"><a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a class="three" href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a></div>
+  <p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
   <div class="reseaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="40" alt=""/></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" alt=""/></a></div>
-<img src="anglet-Drp.png" alt=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fr-drp.jpg"  alt=""/></div>
-<!--<span  class="navigation" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>--> 
+  <span class="languages">FR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="languages">EN</span></div>
 
-<!--  loupe  
-<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="search_50_noir.png" width="50" height="50" alt=""/></span> nav--><!-- Fin  loupe nav--> 
-
+<!-- Recherche  slide -->
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
+  <div class="search-content">
+   <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
+	  <hr/>
+	  <ul  id="filter"><!-- Filter  slide -->
+  <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
+ <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
+ <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
+<li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
+	    <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
+</ul>
+	
+  </div>
+</div><!-- Fin Recherche  slide -->
 <!--  contenu -->
-<div style="margin-top: 100px; text-align: center">
-  <h1 style="font-size: 50px">ABOUT</h1>
-  <br>
-  <br>
-  <br>
-  <p>1983.</p>
-  <br>
-  <br>
-  <p> <strong>GTW Communications</strong> is a mindful word showcasing an extended contemporary vision of Culture, Fashion and Art. The entire edition is set on an ongiong aloft global mind that holds a restored language perspective at sight.</p>
-  <br>
-  <br>
-  <p> We believe in engaging efforts to buld a brand image and reputation globally through strong values and significant mind positioning individuals at new heights..</p>
-  <br>
-  <br>
-  <p> <em>We keep</em> our focal point on developiing original visions and substantial content challenging nowadays digital landscape.</p>
-  <br>
-  <br>
-  <p> And therefore, we direct our management to an unyielding stance that identifies  good measures, performances and breakthrough generated by sleeping potential</p>
-  <br>
-  <br>
-  <p>And from now on, our world is designed by its own ultimate purpose. Your Home.</p>
-  <br>
-  <br>
-  <p>1983.</p>
-  <br>
-  <br>
-  <p><em>Gisèle Evina, Founder</em></p>
-  <br>
-  <br>
-  <h3>CONTACT</h3>
-  <br>
-  <p>Business Inquiries<br>
-    <a href="mailto:management@gtwcommunications.com" style="border-right: none;">management@gtwcommunications.com</a><br>
-    Invitations & Press<br>
-    <a href="mailto:management@gtwcommunications.com" style="border-right: none;">press@gtwcommunications</a></p><br><br><br>
-		<!--Footer -->
-<footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 30px;"><img src="logo-Favo-2.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp;<img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/> &nbsp;&nbsp; &nbsp;<p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p><br>
-<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; <span class="languages"><img src="anglet-Drp.png" alt=""/> &nbsp;<img src="fr-drp.jpg" alt=""/></span><span class="copyright">2018 &copy; Tous Droits Reservés</span></footer>
+<div style="margin-top: 100px; text-align: center;" >
+  <h2 style="padding: 20px 0px; border-bottom-style:inset;"><img src="About.png" width="182" height="42" alt="About gisele the writer"/></h2><hr>
+  <br></div>
+<div class="aboutContenu" style="width: 960px; margin: 0 auto;">
+  <div class="imagesabout" style="display:inline-block; vertical-align:top;"><img src="About800x480.jpg" width="334" height="480" alt=""/></div>
+  <div class="lestextesAbt" style="display: inline-block; width: 500px;margin-left: 20px; font-family: Georgia, Constantia, 'Lucida Bright', 'DejaVu Serif', 'serif'; text-align: justify;"><p>1983.</p>
+    <br>
+    <br>
+    
+    <p> <strong>GTW Communications</strong> is a mindful word showcasing an extended contemporary vision of Culture, Fashion and Art. The entire edition is set on an ongiong aloft global mind that holds a restored language perspective at sight.</p>
+    <br>
+    <br>
+    <p> We believe in engaging efforts to buld a brand image and reputation globally through strong values and significant mind positioning individuals at new heights..</p>
+    <br>
+    <br>
+    <p> <em>We keep</em> our focal point on developiing original visions and substantial content challenging nowadays digital landscape.</p>
+    <br>
+    <br>
+    <p> And therefore, we direct our management to an unyielding stance that identifies  good measures, performances and breakthrough generated by sleeping potential</p>
+    <br>
+    <br>
+    <p>And from now on, our world is designed by its own ultimate purpose. Your Home.</p>
+    <br>
+    <br>
+    <p>1983.</p>
+    <br>
+    <p><em>Gisèle Evina, Founder</em></p>
+    <br>
+    <br>
+    </div>
 </div>
+<br><h2 style="font-size: 50px; font-family: 'BrandonGrotesque Thin';"><img src="Contact.png" width="329" height="42" alt=""/></h2>
+    <br><hr><br>
+    <p style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif';">Business Inquiries<br>
+      <a href="mailto:management@gtwcommunications.com" style="border-right: none; color: #3F3F3F">management@gtwcommunications.com</a><br>
+      Invitations & Press<br>
+      <a href="mailto:management@gtwcommunications.com" style="border-right: none;color: #3F3F3F;">press@gtwcommunications</a></p><br/><hr/>
+  <!--Footer -->
+<footer style="background-color: black;">
+  <div class="premierLigneFooter"><img style="margin-right: 25px" src="logo-Favo-2.png" alt=""/><img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="219" height="87"/>
+    <p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p>
+    <div class="reseauxSociaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a></div>
+  </div>
+  <div class="premierDeuFooter">
+  <div class="copyright"> Tous Droits Reservés &copy; 2018 GTW Communications.</div><div class="copyright" style="float: right;">  <span style="color: #454545;">Design</span> GTW & Communications | <span style="color: #454545;">Development</span> NACHIT
+  </div>
+  </div>
+</footer>
+
 </body>
 </html>

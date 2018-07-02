@@ -83,23 +83,45 @@ padding: 5px;
 		text-align: justify;
 		color: #777;
 	}
+@media screen and (max-width: 460px){
+	h1{
+		top: 115px;
+		text-align: left;
+	}
+	footer p {
+    display: block;
+    position: relative;
+    top: 20px;
+		line-height: 30px;
+}
+	footer p a{
+		display: block;
+	} 
+	.reseauxSociaux{display: block;}
+	.premierLigneFooter  {width: 100%;}
+	.premierDeuFooter{
+		width: 100%;
+		margin: 0px 20px;
+		padding-bottom: 30px;
+		text-align: justify;
+	}}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body style="text-align: center">
-<!--header   -->
-<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span> 
+<!--header   --><header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span> 
   <div id="banniere"><img src="Developments-image.png" width="745" height="64" alt=""/></div>
-	<!--  loupe nav-->
-	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="vide_rech.png" width="50" height="50" alt=""/></span><!-- Fin  loupe nav-->
+<!--  loupe nav-->
+	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 130px;" onclick="openRech()"><img src="vide_rech.png" width="50" height="50" alt=""/></span> <!-- Fin  loupe nav-->
 </header>
+	
 <!--menus   -->
-<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-  <a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a>
-<p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="nav"><a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a class="three" href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a></div>
+  <p style=" color: white; font-size: 25px; margin-top: 20px; font-family: Didot; font-style: italic; ">Follow me :</p>
   <div class="reseaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="40" alt=""/></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" alt=""/></a></div>
-<img src="anglet-Drp.png" alt=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fr-drp.jpg"  alt=""/></div>
+  <span class="languages">FR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="languages">EN</span></div>
 <!--<span  class="navigation" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>-->
 
 <div class="logo_favicon"></div>
@@ -339,12 +361,16 @@ padding: 5px;
 
  
 <!--Footer -->
-<footer style="text-align: center; margin-top: 0px; border-top: 1px solid #848484; padding: 30px;"><img src="logo-Favo-2.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp;<img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="150" height="74"/> &nbsp;&nbsp; &nbsp;<p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p><br>
-<a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a>&nbsp; &nbsp; &nbsp; <span class="languages"><img src="anglet-Drp.png" alt=""/> &nbsp;<img src="fr-drp.jpg" alt=""/></span><span class="copyright">2018 &copy; Tous Droits Reservés</span></footer>
-<script>
-	$(document).ready(function(){
-		$.localScroll();
-					  });
-	</script>
+<footer style="background-color: black;">
+  <div class="premierLigneFooter"><img style="margin-right: 25px" src="logo-Favo-2.png" alt=""/><img class="gtwbas" src="LOGO-Gisele-COPYRIGHT-2018.png" alt="" width="219" height="87"/>
+    <p><a href="index.html">Main</a><a href="editorials.html">Editorials</a><a href="developments.html">Developments</a><a href="GetScouted.html">Get Scouted</a><a href="about.html" style="border-right: none;">About</a></p>
+    <div class="reseauxSociaux"><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="facebook.png" width="40" height="40" class="reseaux"></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="pinterest.png" width="40" height="41" class="reseaux"></a><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="Instagram-Gisele.png" width="40" height="40" class="reseaux"></a></div>
+  </div>
+  <div class="premierDeuFooter">
+  <div class="copyright"> Tous Droits Reservés &copy; 2018 GTW Communications.</div><div class="copyright" style="float: right;">  <span style="color: #454545;">Design</span> GTW & Communications | <span style="color: #454545;">Development</span> NACHIT
+  </div>
+  </div>
+</footer>
+
 </body>
 </html>

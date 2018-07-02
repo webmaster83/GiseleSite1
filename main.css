@@ -19,7 +19,7 @@ img{
 }
 ul li {
 list-style-type: none;
-padding: 0 3px;
+padding: 0 16px;
 display: inline;}
 ul > li a{
 	text-decoration: none;
