@@ -15,8 +15,7 @@ footer p {
 }
 p a {
 	text-decoration: none;
-	font-family:"OpenSans Light";
-	text-transform:uppercase;
+	font-family:Georgia, "serif", Constantia, "Lucida Bright", "DejaVu Serif", ;
 	padding: 0 20px 0 20px;
 	font-size: 11px;
 	color: black;
