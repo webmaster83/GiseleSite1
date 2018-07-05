@@ -2,30 +2,93 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="navigationJS.js"></script>
-<script type="text/javascript" src="myVideo.js"></script>
-<script type="text/javascript" src="RechercheJS2.js"></script>
+<script type="text/javascript" src="navigationJS.js"></script><script type="text/javascript" src="RechercheJS2.js"></script>
 <link href="Favicon.jpg" rel="icon" type="image/x-icon" />
 <link href="reset.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<title>Page GetScouted Gisèle</title>
-<link href="header.css" rel="stylesheet" type="text/css">
-<link href="Navigation.css" rel="stylesheet" type="text/css">
-<link href="main.css" rel="stylesheet" type="text/css">
-<link href="video.css" rel="stylesheet" type="text/css">
+<link href="piedePage.css" rel="stylesheet" type="text/css">
 <link href="RechercheSlide.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Page About Gisèle</title>
+<link href="Navigation.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.reseaux a {
+	display: inline;
+}
+hr{ margin: 0 auto;
+}
+		#reseauxmenus  a {
+		padding:15px 15px 30px 15px;
+	}
+/*element javascript #mySidenav*/
+</style>
+<link href="header.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-<header id="entete"> </header>
-<div id="myDIV"  class="contenu"><br>
-  <br>
-  <br>
-  <p>coming...</p>
-  <br>
-  <br>
-  <br>
-  <a href="index.html" target="_blank" style="font-size: 50px">Return</a> </div>
+<body style="text-align: center">
+<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; margin-top: -70px" onclick="openNav()"><img src="menu_noir_ham.png" width="50" height="49" alt="menu gisle"/></span> <!--fin menu nav   -->
+	<!--  loupe nav-->
+	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 30px; top: 100px;" onclick="openRech()"><img src="search_50_noir.png" width="50" height="50" alt=""/></span> 
+	<!-- Fin  loupe nav-->
+</header>
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="nav"><a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a class="three" href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a></div>
+  <p style=" color: white; font-size: 20px; margin-top: 40px; font-family: Didot; font-style: italic; ">Follow us :</p>
+   <div id="reseauxmenus" style="display: inline-flex;"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta-Menus.png" width="17" height="17" alt=""/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="FaacebookMenus.png" width="9" height="18" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PinterestMenus.png" width="14" height="18" alt=""/></a></div><br/><br/>
+<span class="languages">FR</span>&nbsp;&nbsp;<span class="languages">|</span>&nbsp;&nbsp;<span class="languages">EN</span></div>
+
+<!-- Recherche  slide -->
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
+  <div class="search-content">
+   <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
+	  <hr/>
+	  <ul  id="filter"><!-- Filter  slide -->
+  <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
+ <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
+ <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
+<li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
+	    <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
+</ul>
+	
+  </div>
+</div><!-- Fin Recherche  slide -->
+<!--  contenu -->
+<div style="margin-top: 80px; text-align: center;" >
+  <h2 style="padding: 20px 0px; border-bottom-style:inset;"><img src="GETSCOUTED-page-GET.png" width="330" height="42" alt=""/></h2>
+  <hr>
+<br></div>
+<div class="aboutContenu" style="width: 1714px; margin: 0 auto;"> <div class="lestextesAbt" style="display: inline-block; width: 500px; font-family: Georgia, Constantia, 'Lucida Bright', 'DejaVu Serif', 'serif'; text-align: justify;"><h2 style="font-size: 40px; text-align: center;font-weight: normal;">Titre.</h2>
+    <br>
+    <br>
+    
+    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <br>
+    <br>
+    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+  </div>
+  <div class="imagesabout" style="display:inline-block; vertical-align:top; float: right;"><img src="image-noir-blanc.png" width="960" height="540" alt=""/></div>
+ 
+</div>
+<br>
+<div id="banierreNoir" style="height: 300px ; background-color: #000;">Content  Goes Here</div>
+<hr/>
+  <!--Footer -->
+<footer style="background-color: white;">
+  <div class="premierLigneFooter"><img style="margin-right: 30px" src="logo-Favo-2.png" alt=""/><img src="LOGO-Gisele-COPYRIGHT-2018.png" width="212" height="81" alt=""/>
+    <p><a href="index.html"><img src="MAIN.png" width="37" height="11" alt=""/></a><a href="editorials.html"><img src="EDITORIALS.png" width="77" height="10" alt=""/></a><a href="developments.html"><img src="DEVELOPMENTS.png" width="110" height="11" alt=""/></a><a href="GetScouted.html"><img src="GETSCOUTED.png" width="99" height="9" alt=""/></a><a href="about.html" style="border-right: none;"><img src="ABOUT_PIED.png" width="49" height="10" alt=""/></a></p>
+   <div class="reseauxSociaux"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta.png" alt="" width="17" height="17" class="reseaux"/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="Face.png" alt="" width="9" height="18" class="reseaux"/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PINT.png" alt="" width="17" height="17" class="reseaux"/></a></div>
+  </div>
+  <div class="premierDeuFooter">
+  <div class="copyright"> Tous Droits Reservés &copy; 2018 GTW Communications.</div><div class="copyright" style="float: right;">  <span>Design</span> GTW & Communications | <span>Development</span> NACHIT
+  </div>
+  </div>
+</footer>
+
 </body>
 </html>
