@@ -15,148 +15,166 @@
 <link href="contenu.css" rel="stylesheet" type="text/css">
 <link href="piedePage.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="RechercheJS2.js"></script>
-
 <style type="text/css">
-	.logo_favicon {
-		opacity: 1;
+.logo_favicon {
+	opacity: 1;
 }
-	* {
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
 	width: 80%;
 	margin: 0px auto;
 }
-
 /* Create four equal columns that sits next to each other */
 .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+h1 {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -280px;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-	h1{
-		position: absolute; top: 30px; left: 50%;margin-left: -280px;
-	}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
+.column {
+	-ms-flex: 50%;
+	flex: 50%;
+	max-width: 50%;
+}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
+.column {
+	-ms-flex: 100%;
+	flex: 100%;
+	max-width: 100%;
 }
-.reseaux a{
-		display: inline;
-	}
-	hr{ margin: 0 auto;}
-#filter li  {
-		text-align: left;
-	}
-@media screen and (max-width: 460px){
-	h1 img{
-		position: absolute; top: -21px;margin-left: 75px;
-		height: 25px;
-        width: 223px;}
-	footer p {
-    display: block;
-    position: relative;
-    top: 20px;
-		line-height: 30px;
 }
-	footer p a{
-		display: block;
-	} 
-	.reseauxSociaux{display: block;}
-	.premierLigneFooter  {width: 100%;}
-	.premierDeuFooter{
-		width: 100%;
-		margin: 0px 20px;
-		padding-bottom: 30px;
-		text-align: justify;
-	}}
-	#myVideo{
-	width: 100%	;
-min-height: 100%;
-	}
+.reseaux a {
+	display: inline;
+}
+hr {
+	margin: 0 auto;
+}
+#filter li {
+	text-align: left;
+}
+
+@media screen and (max-width: 460px) {
+h1 img {
+	position: absolute;
+	top: -21px;
+	margin-left: 75px;
+	height: 25px;
+	width: 223px;
+}
+footer p {
+	display: block;
+	position: relative;
+	top: 20px;
+	line-height: 30px;
+}
+footer p a {
+	display: block;
+}
+.reseauxSociaux {
+	display: block;
+}
+.premierLigneFooter {
+	width: 100%;
+}
+.premierDeuFooter {
+	width: 100%;
+	margin: 0px 20px;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+}
+#myVideo {
+	width: 100%;
+	min-height: 100%;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<!--header   -->
-<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span> 
+<!--header   -->
+<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span>
   <video id="myVideo" muted="muted" autoplay="autoplay" loop="loop" >
     <source src="videogisele2.mp4" type="video/mp4">
   </video>
-  <h1 ><img src="Editorials-image.png" width="561" height="64" alt=""/></h1>  <!--  loupe nav-->
-	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 1%; top: 130px;" onclick="openRech()"><img src="vide_rech.png" width="50" height="50" alt=""/></span> <!-- Fin  loupe nav-->
+  <h1 ><img src="Editorials-image.png" width="561" height="64" alt=""/></h1>
+  <!--  loupe nav--> 
+  <span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 1%; top: 130px;" onclick="openRech()"><img src="vide_rech.png" width="50" height="50" alt=""/></span> <!-- Fin  loupe nav--> 
 </header>
-	
-	<!--menus   -->
+
+<!--menus   -->
 <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div id="nav"><a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a class="three" href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a></div>
   <p style=" color: white; font-size: 20px; margin-top: 40px; font-family: Didot; font-style: italic; ">Follow us :</p>
-    <div id="reseauxmenus" style="display: inline-flex;"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta-Menus.png" width="17" height="17" alt=""/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="FaacebookMenus.png" width="9" height="18" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PinterestMenus.png" width="14" height="18" alt=""/></a></div><br/><br/>
+  <div id="reseauxmenus" style="display: inline-flex;"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta-Menus.png" width="17" height="17" alt=""/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="FaacebookMenus.png" width="9" height="18" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PinterestMenus.png" width="14" height="18" alt=""/></a></div>
+  <br/>
+  <br/>
   <span class="languages">FR</span>&nbsp;&nbsp;<span class="languages">|</span>&nbsp;&nbsp;<span class="languages">EN</span></div>
 <!--<span  class="navigation" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>-->
 
 <div class="logo_favicon"></div>
 <!-- Recherche  slide -->
-	<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
+<div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
   <div class="search-content">
-   <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
-	  <hr/>
-	  <ul  id="filter"><!-- Filter  slide -->
-  <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
- <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
- <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
-<li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
-		  <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
-</ul>
-	
+    <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
+    <hr/>
+    <ul  id="filter">
+      <!-- Filter  slide -->
+      <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
+      <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
+      <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
+      <li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
+      <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
+      <li> <a href="Article1-Editorials.html" title="amine"><span>The Black Edition (Last Night On Earth)</span> </a> </li>
+	<li> <a href="Article2-Editorials.html" title="amine"><span>The 2nd Wave</span> </a> </li>
+    </ul>
   </div>
-</div><!-- Fin Recherche  slide -->
-	<!--contenu   -->
+</div>
+<!-- Fin Recherche  slide --> 
+<!--contenu   --> 
 
-	<!-- Photo Grid -->
+<!-- Photo Grid -->
 <div class="editorailImgs">
   <div class="row">
-    <div class="column"> <a href="Article1-Editorials.html"><img  style=" width: 100%" src="Articles/art1.jpg"/></a><img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/4.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  </div>
-    <div class="column"><a href="Article2-Editorials.html"><img style="width: 100%;" src="Articles/art2.jpg"/></a> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"><img src="images/10.jpeg" style="width:100%"> <img src="images/4.jpg" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/8.jpg" style="width:100%">  <img src="images/7.jpeg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  </div>
-    <div class="column"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  <img src="images/4.jpg" style="width:100%">  <img src="images/3.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  <img src="images/7.jpeg" style="width:100%"> </div>
-    <div class="column"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%">  <img src="images/10.jpeg" style="width:100%">  <img src="images/1.jpg" style="width:100%">  <img src="images/2.jpg" style="width:100%">  <img src="images/9.png" style="width:100%">  <img src="images/8.jpg" style="width:100%">  <img src="images/7.jpeg" style="width:100%">  <img src="images/6.jpg" style="width:100%">  <img src="images/5.jpg" style="width:100%">  <img src="images/4.jpg" style="width:100%">  </div>
+    <div class="column"> <a href="Article1-Editorials.html"><img  style=" width: 100%" src="Articles/art1.jpg"/></a><img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> </div>
+    <div class="column"><a href="Article2-Editorials.html"><img style="width: 100%;" src="Articles/art2.jpg"/></a> <img src="images/9.png" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"><img src="images/10.jpeg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> </div>
+    <div class="column"> <img src="images/4.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> </div>
+    <div class="column"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> <img src="images/3.jpg" style="width:100%"> <img src="images/10.jpeg" style="width:100%"> <img src="images/1.jpg" style="width:100%"> <img src="images/2.jpg" style="width:100%"> <img src="images/9.png" style="width:100%"> <img src="images/8.jpg" style="width:100%"> <img src="images/7.jpeg" style="width:100%"> <img src="images/6.jpg" style="width:100%"> <img src="images/5.jpg" style="width:100%"> <img src="images/4.jpg" style="width:100%"> </div>
   </div>
 </div>
 <hr style="width: 100%">
-  <!--Footer -->
+<!--Footer -->
 <footer style="background-color: white;">
   <div class="premierLigneFooter"><img style="margin-right: 30px" src="logo-Favo-2.png" alt=""/><img src="LOGO-Gisele-COPYRIGHT-2018.png" width="212" height="81" alt=""/>
     <p><a href="index.html"><img src="MAIN.png" width="37" height="11" alt=""/></a><a href="editorials.html"><img src="EDITORIALS.png" width="77" height="10" alt=""/></a><a href="developments.html"><img src="DEVELOPMENTS.png" width="110" height="11" alt=""/></a><a href="GetScouted.html"><img src="GETSCOUTED.png" width="99" height="9" alt=""/></a><a href="about.html" style="border-right: none;"><img src="ABOUT_PIED.png" width="49" height="10" alt=""/></a></p>
-     <div class="reseauxSociaux"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta.png" alt="" width="17" height="17" class="reseaux"/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="Face.png" alt="" width="9" height="18" class="reseaux"/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PINT.png" alt="" width="17" height="17" class="reseaux"/></a></div>
+    <div class="reseauxSociaux"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta.png" alt="" width="17" height="17" class="reseaux"/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="Face.png" alt="" width="9" height="18" class="reseaux"/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PINT.png" alt="" width="17" height="17" class="reseaux"/></a></div>
   </div>
-    <div class="premierDeuFooter">
-  <div class="copyright"> Tous Droits Reservés &copy; 2018 GTW Communications.</div><div class="copyright" style="float: right;"><span>Design</span> &amp; Development | GTW Communications Team </div>
+  <div class="premierDeuFooter">
+    <div class="copyright"> Tous Droits Reservés &copy; 2018 GTW Communications.</div>
+    <div class="copyright" style="float: right;"><span>Design</span> &amp; Development | GTW Communications Team </div>
   </div>
 </footer>
 </body>
