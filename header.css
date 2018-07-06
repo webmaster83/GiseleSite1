@@ -14,7 +14,9 @@ h1{
   transition: width 0s;
   width: 0%;
 }
-
+#reseauxmenus  a {
+		padding:0px 15px 30px 15px;
+	}
 #nav a:hover::after,
 #nav .current-menu-item a::after {
   width: 13%;
