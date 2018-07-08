@@ -50,17 +50,20 @@ vertical-align: top;
 display: inline-block;
 margin-top: 38px;
 }
-.copyright {
+.copyright_gauch {
 	position: relative;
 	color: black;
 	font-family:"JosefinSans Thin";
 	font-size:11px;
 	display: inline-block;
 }
+.copyright_droi{float: right;font-family:"JosefinSans Thin";
+	font-size:11px;}
 .premierDeuFooter {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 10px 35px;
 	text-align: justify;
 }
+.premierLigneFooter img:first-of-type{ margin-right: 30px;}
 footer span { color:#666;}

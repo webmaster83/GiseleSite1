@@ -66,4 +66,5 @@ color:white;
 .recherche {
 	background: url(search_50.png) top right no-repeat;
 	height: 50px;
+	 right: 1%; top: 130px;
 }
