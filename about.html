@@ -14,91 +14,153 @@
 .reseaux a {
 	display: inline;
 }
-hr{ margin: 0 auto;
+hr {
+	margin: 0 auto;
 }
-	@media screen and (max-width: 460px){
-	h1 img{
-		position: absolute; top: -21px;margin-left: 202px;
-		height: 25px;
-        width: 223px;}
-	.effetImg > img{
-    width: 75%;
+.aboutContenu {
+	margin: 0 auto;
+	display: flex;
+	width: 90%;
+}
+.imagesabout {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+.lestextesAbt {
+	display: inline-block;
+	width: 100%;
+	margin-left: 50px;
+	font-family: Georgia, Constantia, 'Lucida Bright', 'DejaVu Serif', 'serif';
+	text-align: justify;
+}
+h2 {
+	font-size: 50px;
+	font-family: 'BrandonGrotesque Thin';
+	margin: 50px auto;
+	text-align: center;
+}
+.contact {
+	font-family: Didot;
+	font-style: italic;
+	font-size: 25px;
+	text-align: center;
+}
+
+/* SCREENN SMARTPHONE */
+@media screen and (max-width: 460px) {
+.aboutContenu {
+	display: block;
+	margin: 0 auto;
+}
+.imagesabout {
+	display: block;
+	width: 100%;
+}
+.imagesabout {
+	display: block;
+}
+.lestextesAbt {
+	margin: 0 auto;
+}
+h1 img {
+	position: absolute;
+	top: -21px;
+	margin-left: 202px;
+	height: 25px;
+	width: 223px;
+}
+.effetImg > img {
+	width: 75%;
 	margin-left: -100px;
 }
-	.overlay .closebtn {
-    font-size: 19px;
-    top: 5px;
-   
+.overlay .closebtn {
+	font-size: 19px;
+	top: 5px;
 }
 .overlay a {
-    font-size: 20px;
-    color: #818181;
+	font-size: 20px;
+	color: #818181;
 }
-	.effetImg h2 {width: 100px;}
-	.copyright_droi{float: left;}
-	.premierDeuFooter{margin: 0px;}
-	.cadreTrans{width: 75%;}
-	footer p {
-    display: block;
-    position: relative;
-    top: 20px;
-		line-height: 30px;
+.effetImg h2 {
+	width: 100px;
 }
-	footer p a{
-		display: block;
-	} 
-	.reseauxSociaux{display: block;}
-	.premierLigneFooter  {width: 100%;}
-	.premierDeuFooter{
-		width: 100%;
-		margin: 0px 20px;
-		padding-bottom: 30px;
-		text-align: justify;
-	}}
+.copyright_droi {
+	float: left;
+}
+.cadreTrans {
+	width: 75%;
+}
+footer p {
+	display: block;
+	position: relative;
+	top: 20px;
+	line-height: 30px;
+}
+footer p a {
+	display: block;
+}
+.reseauxSociaux {
+	display: block;
+}
+.premierLigneFooter {
+	width: 100%;
+}
+.premierDeuFooter {
+	width: 90%;
+	margin: 0px 20px;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+}
 /*element javascript #mySidenav*/
 </style>
 <link href="header.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body style="text-align: center">
-<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; margin-top: -70px" onclick="openNav()"><img src="menu_noir_ham.png" width="50" height="49" alt="menu gisle"/></span> <!--fin menu nav   -->
-	<!--  loupe nav-->
-	<span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 1%; top: 100px;" onclick="openRech()"><img src="search_50_noir.png" width="50" height="50" alt=""/></span> 
-	<!-- Fin  loupe nav-->
+<body >
+<header id="entete"> <!--menu nav   --><span class="navigation" style="font-size:50px;cursor:pointer; margin-top: -70px" onclick="openNav()"><img src="menu_noir_ham.png" width="50" height="49" alt="menu gisle"/></span> <!--fin menu nav   --> 
+  <!--  loupe nav--> 
+  <span  class="recherche" style="font-size:30px;cursor:pointer; position: fixed; right: 1%; top: 100px;" onclick="openRech()"><img src="search_50_noir.png" width="50" height="50" alt=""/></span> 
+  <!-- Fin  loupe nav--> 
 </header>
 <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div id="nav"><a href="index.html" class="one">MAIN</a> <a href="editorials.html" class="two">EDITORIALS</a> <a class="three" href="developments.html">DEVELOPMENTS</a> <a href="GetScouted.html">GET SCOUTED</a> <a href="about.html">ABOUT</a></div>
   <p style=" color: white; font-size: 20px; margin-top: 40px; font-family: Didot; font-style: italic; ">Follow us :</p>
-   <div id="reseauxmenus" style="display: inline-flex;"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta-Menus.png" width="17" height="17" alt=""/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="FaacebookMenus.png" width="9" height="18" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PinterestMenus.png" width="14" height="18" alt=""/></a></div><br/><br/>
+  <div id="reseauxmenus" style="display: inline-flex;"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta-Menus.png" width="17" height="17" alt=""/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="FaacebookMenus.png" width="9" height="18" alt=""/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PinterestMenus.png" width="14" height="18" alt=""/></a></div>
+  <br/>
+  <br/>
   <span class="languages">FR</span>&nbsp;&nbsp;<span class="languages">|</span>&nbsp;&nbsp;<span class="languages">EN</span></div>
 
 <!-- Recherche  slide -->
-	<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
+<div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeRech()">&times;</a>
   <div class="search-content">
-   <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
-	  <hr/>
-	  <ul  id="filter"><!-- Filter  slide -->
-  <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
- <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
- <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
-<li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
-	    <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
-</ul>
-	
+    <input placeholder="search" class="maRecherche" type="text" name="category" id="categoryFilter">
+    <hr/>
+    <ul  id="filter">
+      <!-- Filter  slide -->
+      <li> <a href="index.html" title="amine"><!--<img src="amine.jpg" width="200" height="200" alt=""/>--><span>accueil page</span> </a> </li>
+      <li> <a href="about.html" title="amine"><span>about page</span> </a> </li>
+      <li> <a href="editorials.html" title="amine"><span>editorials page</span> </a> </li>
+      <li> <a href="GetScouted.html" title="amine"><span>getscouted page</span> </a> </li>
+      <li> <a href="gisele_video.mp4" title="amine"><span>video gisele</span> </a> </li>
+    </ul>
   </div>
-</div><!-- Fin Recherche  slide -->
+</div>
+<!-- Fin Recherche  slide --> 
 <!--  contenu -->
 <div style="margin-top: 80px; text-align: center;" >
-  <h2 style="padding: 20px 0px; border-bottom-style:inset;"><img src="About.png" width="182" height="42" alt="About gisele the writer"/></h2><hr>
-  <br></div>
-<div class="aboutContenu" style="margin: 0 auto; display: flex; width: 90%;">
-  <div class="imagesabout" style="display:inline-block; vertical-align:top;"><img src="About800x480.png" width="800px" height="auto" alt=""/></div>
-  <div class="lestextesAbt" style="display: inline-block; width: 500px;margin-left: 115px; font-family: Georgia, Constantia, 'Lucida Bright', 'DejaVu Serif', 'serif'; text-align: justify;"><h2 style="font-size: 40px; text-align: center;font-weight: normal;">1983.</h2>
+  <h2 style="padding: 20px 0px; border-bottom-style:inset;"><img src="About.png" width="182" height="42" alt="About gisele the writer"/></h2>
+  <hr>
+  <br>
+</div>
+<div class="aboutContenu">
+  <div class="imagesabout"><img src="About800x480.png"  width="100%" height="auto" alt=""/></div>
+  <div class="lestextesAbt">
+    <h2 style="font-size: 40px; text-align: center;font-weight: normal;">1983.</h2>
     <br>
     <br>
-    
     <p> GTW Communications is a mindful word showcasing an extended contemporary vision of Culture, Fashion and Art. The entire edition is set on an ongiong aloft global mind that holds a restored language perspective at sight.</p>
     <br>
     <br>
@@ -119,24 +181,37 @@ hr{ margin: 0 auto;
     <p style="font-family: Didot;"><em>Gisèle Evina, Founder</em></p>
     <br>
     <br>
-    </div>
+  </div>
 </div>
-<br><h2 style="font-size: 50px; font-family: 'BrandonGrotesque Thin'; margin-top: 50px;"><img src="Contact.png" width="329" height="42" alt=""/></h2>
-    <br><hr><br>
-    <p style="font-family:Didot; font-style: italic; font-size: 25px;">Business Inquiries<br>
-      <a href="mailto:management@gtwcommunications.com" style="border-right: none; color: #3F3F3F; font-size: 14px;">management@gtwcommunications.com</a><br><br><br><br>
-      Invitations & Press<br>
-      <a href="mailto:management@gtwcommunications.com" style="border-right: none;color: #3F3F3F; font-size: 14px;">press@gtwcommunications.com</a></p><br/><br/><br/><br/><br/><br/><hr/>
-  <!--Footer -->
+<br>
+<h2><img src="Contact.png" width="329" height="42" alt=""/></h2>
+<br>
+<hr>
+<br>
+<p class="contact">Business Inquiries<br>
+  <a href="mailto:management@gtwcommunications.com" style="border-right: none; color: #3F3F3F; font-size: 14px;">management@gtwcommunications.com</a><br>
+  <br>
+  <br>
+  <br>
+  Invitations & Press<br>
+  <a href="mailto:management@gtwcommunications.com" style="border-right: none;color: #3F3F3F; font-size: 14px;">press@gtwcommunications.com</a></p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<hr/>
+<!--Footer -->
 <footer style="background-color: white;">
   <div class="premierLigneFooter"><img style="margin-right: 30px" src="logo-Favo-2.png" alt=""/><img src="LOGO-Gisele-COPYRIGHT-2018.png" width="212" height="81" alt=""/>
     <p><a href="index.html"><img src="MAIN.png" width="37" height="11" alt=""/></a><a href="editorials.html"><img src="EDITORIALS.png" width="77" height="10" alt=""/></a><a href="developments.html"><img src="DEVELOPMENTS.png" width="110" height="11" alt=""/></a><a href="GetScouted.html"><img src="GETSCOUTED.png" width="99" height="9" alt=""/></a><a href="about.html" style="border-right: none;"><img src="ABOUT_PIED.png" width="49" height="10" alt=""/></a></p>
-   <div class="reseauxSociaux"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta.png" alt="" width="17" height="17" class="reseaux"/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="Face.png" alt="" width="9" height="18" class="reseaux"/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PINT.png" alt="" width="17" height="17" class="reseaux"/></a></div>
+    <div class="reseauxSociaux"><a href="https://www.instagram.com/gtwcommunications/?hl=en" target="_blank"><img src="insta.png" alt="" width="17" height="17" class="reseaux"/></a><a href="https://www.facebook.com/gtwcommunications/" target="_blank"><img src="Face.png" alt="" width="9" height="18" class="reseaux"/></a><a href="https://www.pinterest.com/GTWCommunications/topics/" target="_blank"><img src="PINT.png" alt="" width="17" height="17" class="reseaux"/></a></div>
   </div>
-     <div class="premierDeuFooter">
-  <div class="copyright_gauch"> Tous Droits Reservés &copy; 2018 GTW Communications.</div><div class="copyright_droi"><span>Design</span> &amp; Development | GTW Communications Team </div>
+  <div class="premierDeuFooter">
+    <div class="copyright_gauch"> Tous Droits Reservés &copy; 2018 GTW Communications.</div>
+    <div class="copyright_droi"><span>Design</span> &amp; Development | GTW Communications Team </div>
   </div>
 </footer>
-
 </body>
 </html>
